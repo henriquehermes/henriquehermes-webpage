@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 import styled, { css, keyframes } from 'styled-components';
 import { Node } from 'styled-icons/fa-brands/Node';
 import { ReactLogo } from 'styled-icons/fa-brands/ReactLogo';
@@ -5,7 +6,6 @@ import { ReactLogo } from 'styled-icons/fa-brands/ReactLogo';
 const iconsStyle = css`
   width: 50px;
   height: 50px;
-  color: #fff;
 `;
 
 const fadeIn = keyframes`
@@ -20,13 +20,22 @@ const fadeIn = keyframes`
   }
 `;
 
+const rotation = keyframes`
+  from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(359deg);
+	}
+`;
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  background-image: url('https://i.ibb.co/47FBPZq/clouds.jpg');
-  background-repeat: no-repeat;
+  background: linear-gradient(#2e2e40, #3f3c56);
 `;
 
 export const MenuBar = styled.div`
@@ -126,5 +135,25 @@ export const NodeJS = styled(Node)`
 `;
 
 export const ReactJS = styled(ReactLogo)`
-  ${iconsStyle}
+  ${iconsStyle};
+  animation: ${rotation} 3s infinite linear;
+`;
+
+export const Image = styled.img.attrs({
+  src: require('../../../../images/header/header.svg'),
+})`
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 20px;
+  width: 400px;
+`;
+
+export const Wave = styled.img.attrs({
+  src: require('../../../../images/header/wave.svg'),
+})`
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -1px;
+  width: 100%;
 `;

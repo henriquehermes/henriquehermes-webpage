@@ -10,31 +10,32 @@ import {
   H3,
   NodeJS,
   ListIcons,
-  ReactJS
+  ReactJS,
+  Image,
+  Wave,
 } from './styles';
 
 const Header = scrollt => (
   <Container>
+    <Wave />
     <MenuBar>
       <MenuButton onClick={() => scrollt()}>
-        <MenuLabel>Sobre</MenuLabel>
+        <MenuLabel>About</MenuLabel>
       </MenuButton>
       <MenuButton>
-        <MenuLabel>Portfólio</MenuLabel>
-      </MenuButton>
-      <MenuButton>
-        <MenuLabel>Contato</MenuLabel>
+        <MenuLabel>Contact</MenuLabel>
       </MenuButton>
     </MenuBar>
     <Body>
-      <H1>Full Stack Developer</H1>
+      <Image />
+      <H1>Front End Developer</H1>
       <H3>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua.
+        Creating amazing Apps since 2017 with ReactJS and React Native.
+        Sometimes kidding with Back-end using NodeJS.
       </H3>
       <ListIcons>
-        <ReactJS />
-        <NodeJS />
+        <ReactJS color="#61dafb" />
+        <NodeJS color="#fff" />
       </ListIcons>
     </Body>
   </Container>

@@ -3,7 +3,7 @@ import React, { createRef } from 'react';
 import { Container } from './styles';
 import Header from './components/Header';
 import About from './components/About';
-import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 const Home = () => {
   const refAbout = createRef();
@@ -11,14 +11,14 @@ const Home = () => {
   function scrollt() {
     refAbout.current.scrollIntoView({
       behavior: 'smooth',
-      block: 'end'
+      block: 'end',
     });
   }
   return (
     <Container>
       <Header scrollt={() => scrollt()} />
       <About ref={refAbout} />
-      <Projects />
+      <Contact />
     </Container>
   );
 };

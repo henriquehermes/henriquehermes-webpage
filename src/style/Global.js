@@ -16,7 +16,7 @@ html, body, #root {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: #ecf1f8;
+  background: #f6f6f6;
   color: #333;
   -webkit-font-smoothing: antialiased !important;
 }

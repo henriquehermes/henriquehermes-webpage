@@ -37,7 +37,9 @@ export const Header = styled.div`
   align-items: center;
 `;
 
-export const UserImg = styled.img`
+export const UserImg = styled.img.attrs({
+  src: require('../../../../images/about/me.png'),
+})`
   height: 150px;
   width: 150px;
   border-radius: 50%;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: #e6e6e6;
+  background: #f6f6f6;
 `;
