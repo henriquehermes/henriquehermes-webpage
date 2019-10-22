@@ -2,6 +2,7 @@
 import styled, { css, keyframes } from 'styled-components';
 import { Node } from 'styled-icons/fa-brands/Node';
 import { ReactLogo } from 'styled-icons/fa-brands/ReactLogo';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 const iconsStyle = css`
   width: 50px;
@@ -96,7 +97,11 @@ export const H3 = styled.h3`
   }
 `;
 
-export const MenuButton = styled.button`
+export const MenuButton = styled(Link).attrs({
+  to: props => props.toID,
+  smooth: true,
+  duration: 500,
+})`
   cursor: pointer;
   padding: 10px;
   background: transparent;

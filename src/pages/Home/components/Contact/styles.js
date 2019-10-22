@@ -19,7 +19,9 @@ export const Title = styled.h1`
 export const Body = styled.div`
   margin-top: 30px;
   display: flex;
-  flex-direction: column;
+  width: 15%;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
 `;
 
@@ -32,6 +34,13 @@ export const Wave = styled.img.attrs({
 
 export const Linkedin = styled.img.attrs({
   src: require('../../../../images/contact/linkedin.svg'),
+})`
+  width: 50px;
+  height: 50px;
+`;
+
+export const Github = styled.img.attrs({
+  src: require('../../../../images/contact/github.svg'),
 })`
   width: 50px;
   height: 50px;
