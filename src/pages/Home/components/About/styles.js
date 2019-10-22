@@ -93,6 +93,7 @@ export const ListTec = styled.div`
 
   @media (max-width: 725px) {
     width: 100%;
+    margin-top: 50px;
   }
 `;
 

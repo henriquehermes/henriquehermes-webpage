@@ -49,8 +49,8 @@ export const Body = styled.div`
   justify-content: space-evenly;
   align-items: center;
 
-  @media (min-width: 321px) and (max-width: 425px) {
-    width: 40%;
+  @media (min-width: 321px) and (max-width: 768px) {
+    width: 30%;
   }
 
   @media (max-width: 320px) {
