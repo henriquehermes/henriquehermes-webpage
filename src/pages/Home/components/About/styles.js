@@ -11,9 +11,17 @@ const animateScale = css`
 `;
 
 const iconsStyle = css`
-  width: 60px;
-  height: 60px;
   transition: transform 0.2s linear;
+
+  @media (max-width: 320px) {
+    width: 45px;
+    height: 45px;
+  }
+
+  @media (min-width: 321px) {
+    width: 60px;
+    height: 60px;
+  }
 
   &:hover {
     ${animateScale}
@@ -28,6 +36,11 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+  @media (max-width: 725px) {
+    height: 100%;
+    padding: 30px 10px;
+  }
 `;
 
 export const Header = styled.div`
@@ -55,6 +68,10 @@ export const UserName = styled.span`
   font-size: 38px;
   font-weight: 700;
   margin: 20px 0;
+
+  @media (max-width: 320px) {
+    font-size: 25px;
+  }
 `;
 
 export const UserDescription = styled.p`
@@ -68,6 +85,10 @@ export const ListTec = styled.div`
   justify-content: space-around;
   align-items: center;
   width: 50%;
+
+  @media (max-width: 725px) {
+    width: 100%;
+  }
 `;
 
 export const Redux = styled.img.attrs({ src: svgRedux })`

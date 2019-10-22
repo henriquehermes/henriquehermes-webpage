@@ -2,7 +2,7 @@
 import styled, { css, keyframes } from 'styled-components';
 import { Node } from 'styled-icons/fa-brands/Node';
 import { ReactLogo } from 'styled-icons/fa-brands/ReactLogo';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 const iconsStyle = css`
   width: 50px;
@@ -22,13 +22,8 @@ const fadeIn = keyframes`
 `;
 
 const rotation = keyframes`
-  from {
-		transform: rotate(0deg);
-	}
-
-	to {
-		transform: rotate(359deg);
-	}
+  from { transform: rotate(0deg); }
+  to { transform: rotate(359deg); }
 `;
 
 export const Container = styled.div`
@@ -42,25 +37,17 @@ export const Container = styled.div`
 export const MenuBar = styled.div`
   display: flex;
   width: 100%;
-  height: 50px;
+  height: 80px;
   justify-content: flex-end;
+  align-items: center;
   padding: 20px;
-
-  @media (max-width: 400px) {
-    display: none;
-  }
-
-  @media (min-width: 401px) and (max-width: 767px) {
-    height: 80px;
-    justify-content: center;
-    margin-top: 20px;
-  }
 `;
 
 export const Body = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+  padding-bottom: 80px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -152,6 +139,18 @@ export const Image = styled.img.attrs({
   bottom: 0;
   margin-bottom: 20px;
   width: 400px;
+
+  @media (min-width: 426px) and (max-width: 1120px) {
+    width: 300px;
+  }
+
+  @media (min-width: 321px) and (max-width: 425px) {
+    width: 200px;
+  }
+
+  @media (max-width: 320px) {
+    width: 150px;
+  }
 `;
 
 export const Wave = styled.img.attrs({

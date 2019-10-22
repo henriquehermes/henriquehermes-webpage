@@ -19,6 +19,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background: #f6f6f6;
   color: #333;
-  -webkit-font-smoothing: antialiased !important;
+  -webkit-font-smoothing: antialiased !important;  overflow-x: hidden;
+
 }
 `;
