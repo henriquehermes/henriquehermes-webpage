@@ -29,7 +29,7 @@ const rotation = keyframes`
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: ${`${window.innerHeight}px`};
   width: 100%;
   background: linear-gradient(#2e2e40, #3f3c56);
 `;
