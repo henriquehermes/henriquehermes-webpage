@@ -74,9 +74,14 @@ export const UserName = styled.span`
   }
 `;
 
-export const UserDescription = styled.p`
+export const UserDescription = styled.h4`
+  font-weight: normal;
   text-align: center;
   width: 70%;
+
+  @media (max-width: 425px) {
+    width: 90%;
+  }
 `;
 
 export const ListTec = styled.div`
