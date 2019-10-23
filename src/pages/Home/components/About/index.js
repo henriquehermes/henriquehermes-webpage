@@ -22,13 +22,21 @@ const About = () => (
       <UserImg />
       <UserName>Henrique Hermes</UserName>
       <UserDescription>
-        Lorem ipsum vehicula integer ornare pellentesque scelerisque pretium
-        dui, hac aenean conubia hac placerat luctus dictum taciti, class
-        curabitur in ullamcorper convallis iaculis ullamcorper. hac augue est a
-        rhoncus mollis curabitur class quisque curabitur, sagittis enim litora
-        leo suspendisse aenean feugiat himenaeos at mi, massa suspendisse
-        rhoncus sagittis dictumst quisque gravida non.
-      </UserDescription>
+        Se aventurando no mundo da programação desde 2017, utilizando JavaScript
+        como linguagem para desenvolvimento de aplicaçōes Web, Mobile e Backend.
+        Utilizo as bibliotecas mais conhecidas da comunidade ReactJS e React
+        Native, costumo experimentar novas ferramentas e caso seja positiva,
+        proponho a implementacao da mesma com minha equipe.
+        <br />
+        Além do React estar me acompanhando desde o início, metodos ageís tambem
+        estão presentes no meu dia a dia (Daily, Planning, Grooming, Review e
+        Retro)
+        <br />
+A pouco tempo atras, me surgiu o interesse em aprender Backend com
+        NodeJS, aproveitando os conhecimentos de JavaScript no FrontEnd,
+        construi aplicaçōes com NoSQL e SQL como aprendizado, continuo
+        consumindo conteudos para aprimorar o meu conhecimento nesta àrea.
+</UserDescription>
     </Header>
     <Body>
       <ListTec>
@@ -36,12 +44,11 @@ const About = () => (
         <ReactJS color="#222222" />
         <Redux />
         <ReduxSaga />
-      </ListTec>
-      <ListTec>
         <NodeJS />
         <MongoDB />
         <GraphQL />
       </ListTec>
+      <UserName>Projects</UserName>
     </Body>
   </Container>
 );

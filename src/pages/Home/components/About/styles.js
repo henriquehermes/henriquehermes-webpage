@@ -12,6 +12,7 @@ const animateScale = css`
 
 const iconsStyle = css`
   transition: transform 0.2s linear;
+  margin-right: 10px;
 
   @media (max-width: 320px) {
     width: 45px;
@@ -30,7 +31,7 @@ const iconsStyle = css`
 
 export const Container = styled.div`
   background: #f6f6f6;
-  height: 100vh;
+  height: 100%;
   padding: 50px 30px;
   align-items: center;
   display: flex;
@@ -86,13 +87,14 @@ export const UserDescription = styled.h4`
 
 export const ListTec = styled.div`
   display: flex;
-  margin-top: 20px;
+  flex-wrap: wrap;
+  margin: 80px 0px;
   justify-content: space-around;
   align-items: center;
   width: 50%;
 
   @media (max-width: 725px) {
-    width: 100%;
+    width: 90%;
     margin-top: 50px;
   }
 `;
